@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Codines participa</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/blood.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
+  <link rel="stylesheet" href="plugin/drawer/drawer.css">
+  <link rel="stylesheet" href="custom/custom.css">
+  <!-- <link rel="stylesheet" href="custom/primaries.css"> -->
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+  <script src="https://kit.fontawesome.com/d718987dc4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section data-menu-title="Codines participa" data-background-color="rgb(57, 200, 68)">
+        <h2 class="r-fit-text" style="color:white;">Associació</h2>
+
+      </section>
+
+      <section data-menu-title="Què?" data-background-color="rgb(57, 200, 68)">
+        <h2 style="color:white;">Què?</h2>
+        <p style="color:white;">Associació sense ànim de lucre per la promoció de la participació política a Sant Feliu de Codines</p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+      <section data-menu-title="Per què?" data-background-color="rgb(57, 200, 68)">
+        <h2 style="color:white;">Per què?</h2>
+        <p style="color:white;">Organitzar i coordinar les bases de l'agrupació d'electors Primàries Codines.</p>
+        <p style="color:white;">Donar suport i facilitar la comunicació dels regidors/es.</p>
+        <p style="color:white;">Organitzar les primàries de forma independent.</p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+      <section data-menu-title="Espai participa" data-background-color="rgb(57, 200, 68)">
+        <h2 style="color:white;">Espai participa</h2>
+        <p style="color:white;">Nom</p>
+        <p style="color:white;">Estatuts</p>
+        <p style="color:white;">Membres junta</p>
+        <p style="color:white;"><i class="fas fa-comment-dots fa-lg"></i></p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+      <section data-menu-title="Assemblea fundacional" data-background-color="rgb(57, 200, 68)">
+        <h2 style="color:white;">Assemblea fundacional</h2>
+        <p style="color:white;">Dijous 29 de juny</p>
+        <p style="color:white;">19h</p>
+        <p style="color:white;">Casal de la gent gran</p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+
+      <section data-menu-title="Fem-ho!" data-background-color="rgb(57, 200, 68)">
+        <h2 style="color:white;">Fem-ho entre tots i totes!</h2>
+
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+      <!-- plantilla per a una diapo
+      <section data-menu-title="Títol">
+        <h3>Títol</h3>
+        <p class="fragment">Text<br><small><a href="enllaç">enllaç</a></small></p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+    -->
+    </div>
+    <footer id="title-footer" style="background:rgba(0,0,0,0.1)">
+      <a href="index.html">Índex presentacions</a> | <a href="?print-pdf">PDF</a>
+    </footer>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/menu/menu.js"></script>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/drawer/drawer.js"></script>
+  <script>
+
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+      pdfSeparateFragments: false,
+      controls: true,
+      progress: true,
+      hash: true,
+      // slideNumber: 'c/t',
+      transitionSpeed: "slow",
+      pointer: {
+        key: "q", // key to enable pointer, default "q", not case-sensitive
+        color: "red", // color of a cursor, default "red" any valid CSS color
+        opacity: 0.8, // opacity of cursor, default 0.8
+        pointerSize: 20, // pointer size in px, default 12
+        alwaysVisible: false, // should pointer mode be always visible? default "false"
+        tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+      },
+      drawer: {
+        toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+        toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+        colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+        color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+        pathSize: 4, // (optional) path size in px, default 4
+      },
+      menu: {
+        side: 'left',
+        width: 'normal',
+        numbers: false,
+        titleSelector: 'h1, h2, h3, h4, h5, h6',
+        useTextContentForMissingTitles: false,
+        hideMissingTitles: false,
+        markers: true,
+        custom: false,
+        themes: false,
+        themesPath: 'dist/theme/',
+        transitions: false,
+        openButton: true,
+        openSlideNumber: false,
+        keyboard: true,
+        sticky: false,
+        autoOpen: true,
+        delayInit: false,
+        openOnInit: false,
+        loadIcons: true
+      },
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealPointer, RevealDrawer]
+    });
+
+  </script>
+</body>
+
+</html>

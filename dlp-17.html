@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Títol de la presentació</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/white.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
+  <link rel="stylesheet" href="plugin/drawer/drawer.css">
+  <link rel="stylesheet" href="custom/custom.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+        <h1>Backdrop</h1>
+        <h3>El gestor de continguts per a tothom</h3>
+        <p>
+          <small>Una presentació de <a href="https://garrigos.cat">Robert Garrigós</a> pel <a
+              href="http://caliu.cat/dlp2017/">Dia de la Lliberat del Programari - 2017</a></small>
+        </p>
+      </section>
+
+      <section>
+        <h2>Qui sóc</h2>
+        <ul>
+          <li>Robert Garrigós</li>
+          <ul>
+            <li class="fragment fade-up"><a
+                href="https://www.drupal.org/user/16581">https://www.drupal.org/user/16581</a> (gener 2005)</li>
+            <li class="fragment fade-up">Co-organitzador Drupalcon Barcelona 2007</li>
+            <li class="fragment fade-up">Co-fundador drupal.cat</li>
+            <li class="fragment fade-up">Co-fundador <a href="http://ymbra.com">Ymbra</a> (2010)</li>
+          </ul>
+
+        </ul>
+      </section>
+
+      <section>
+        <h2>Qui sou</h2>
+        <ul>
+          <li class="fragment fade-up">Quants desenvolupadors/sysadmins?</li>
+          <li class="fragment fade-up">Quants dissenyadors web?</li>
+          <li class="fragment fade-up">Quants constructors de web (web builders)?</li>
+          <li class="fragment fade-up">Quants usuaris web?</li>
+          <li class="fragment fade-up">Quants amb experiència en Drupal?</li>
+          <ul>
+            <li class="fragment fade-up">Quina versió?</li>
+          </ul>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Què és Backdrop?</h2>
+        <ul>
+          <li class="fragment fade-up">Gestor de continguts (CMS)</li>
+          <li class="fragment fade-up">Fork (amistós) de Drupal 7 (gener 2015)</li>
+          <li class="fragment fade-up">Desenvolupament a <a href="https://github.com/backdrop/backdrop">Github</a></li>
+          <li class="fragment fade-up">394 mòduls contribuïts</li>
+          <li class="fragment fade-up">961 usuaris a <a href="https://backdropcms.org">https://backdropcms.org</a></li>
+        </ul>
+        <aside class="notes">
+          Remarcar que és una evolució de Drupal 7 i per això el comparem amb Drupal 8.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Per què un fork?</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:center;"><img src="custom/imatges/d8.png"></th>
+              <th style="text-align:center;"><img src="custom/imatges/backdrop.png"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="fragment fade-up">
+              <td style="text-align:center;">Projectes grans</td>
+              <td style="text-align:center;">Projectes no tan grans</td>
+            </tr>
+            <tr class="fragment fade-up">
+              <td style="text-align:center;">Codi més complex/abstracte/modern</td>
+              <td style="text-align:center;">Codi més accessible</td>
+            </tr>
+            <tr class="fragment fade-up">
+              <td style="text-align:center;">Pressupostos alts</td>
+              <td style="text-align:center;">Cost més barat</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </section>
+
+      <section>
+        <h2>Filosofia</h2>
+        <ol>
+          <li class="fragment highlight-red visible">Compatibilitat enrere</li>
+          <li>Escriure codi per a la majoria</li>
+          <li>Incloure característiques per a la majoria</li>
+          <li>Assegurar l'ampliació de Backdrop</li>
+          <li class="fragment highlight-red visible">Funcionar en sistemes de requeriments baixos</li>
+          <li class="fragment highlight-red visible">Planificar i programar els llançaments</li>
+          <li>Sempre codi obert i lliure</li>
+        </ol>
+        <p><small><a href="https://backdropcms.org/philosophy"
+              target="_blank">https://backdropcms.org/philosophy</a></small></p>
+      </section>
+
+      <section>
+        <h2>Característiques principals</h2>
+        <ul>
+          <li class="fragment">Sistema de gestió de configuracions</li>
+          <li class="fragment">Gestió de mòduls i plantilles en línia</li>
+          <li class="fragment">Nous sistema de dissenys (layouts)</li>
+          <li class="fragment">Web sensible</li>
+          <li class="fragment">Editor WYSIWYG amb càrrega d'imatges</li>
+        </ul>
+      </section>
+
+
+
+      <section>
+        <h2>Demostració</h2>
+      </section>
+
+      <section>
+        <h2>Involucra't</h2>
+        <p>
+          <i class="fa fa-globe"></i> Comunitat catalana: <a href="https://backdrop.cat">backdrop.cat</a><br>
+          <i class="fa fa-google-plus"></i> Hangouts - Dijous 22h CEST<br>
+          <i class="fa fa-github"></i> <a
+            href="https://github.com/backdrop/backdrop">github.com/backdrop/backdrop</a><br>
+          <i class="fa fa-comments"></i> <a
+            href="https://gitter.im/backdrop/backdrop-issues">gitter.im/backdrop/backdrop-issues</a><br>
+          <i class="fa fa-twitter"></i> <a href="https://twitter.com/backdropcms">@backdropcms</a><br>
+          <i class="fa fa-globe"></i> <a href="https://backdropcms.org">backdropcms.org</a><br>
+        </p>
+      </section>
+
+      <section>
+        <h2>Gràcies</h2>
+      </section>
+
+
+    </div>
+
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/menu/menu.js"></script>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/drawer/drawer.js"></script>
+  <script>
+
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+      pdfSeparateFragments: false,
+      controls: true,
+      progress: true,
+      hash: true,
+      // slideNumber: 'c/t',
+      transitionSpeed: "slow",
+      pointer: {
+        key: "q", // key to enable pointer, default "q", not case-sensitive
+        color: "red", // color of a cursor, default "red" any valid CSS color
+        opacity: 0.8, // opacity of cursor, default 0.8
+        pointerSize: 20, // pointer size in px, default 12
+        alwaysVisible: false, // should pointer mode be always visible? default "false"
+        tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+      },
+      drawer: {
+        toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+        toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+        colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+        color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+        pathSize: 4, // (optional) path size in px, default 4
+      },
+      menu: {
+        side: 'left',
+        width: 'normal',
+        numbers: false,
+        titleSelector: 'h1, h2, h3, h4, h5, h6',
+        useTextContentForMissingTitles: false,
+        hideMissingTitles: false,
+        markers: true,
+        custom: false,
+        themes: false,
+        themesPath: 'dist/theme/',
+        transitions: false,
+        openButton: true,
+        openSlideNumber: false,
+        keyboard: true,
+        sticky: false,
+        autoOpen: true,
+        delayInit: false,
+        openOnInit: false,
+        loadIcons: true
+      },
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealPointer, RevealDrawer]
+    });
+
+  </script>
+  </body>
+
+</html>

@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Títol de la presentació</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/white.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
+  <link rel="stylesheet" href="plugin/drawer/drawer.css">
+  <link rel="stylesheet" href="custom/custom.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section data-background="imatges/portada.jpg">
+        <h2 class="text-light shadow">Guia seguretat bàsica</h2>
+        <p class="shadow text-light">Missatgeria instantània</p>
+      </section>
+      <section>
+        <h2>Conceptes bàsics</h2>
+      </section>
+
+      <section data-background="imatges/anoymous.jpg">
+        <h2 class="text-light shadow">Per què és important</h2>
+        <p class="fragment text-light">Seguretat ≠ hackers ≠ pejoratiu</p>
+        <p class="fragment text-light">No cal fer res il·legal, només cal que ells ho creguin</p>
+        <p class="fragment text-light">Seguretat = privacitat = llibertat</p>
+        <p class="fragment text-light">Glenn Greenwald</p>
+
+
+      </section>
+      <section data-background="imatges/glenn.jpg">
+        <h2 class="text-light shadow">Glenn Greenwald</h2>
+        <p class="fragment text-light">Premi Pullitzer per Servei Públic</p>
+        <p class="fragment text-light">Publicació revelacions Edward Snowden</p>
+        <p class="fragment text-light"><q>“No em preocupa la invasió de la meva privacitat perquè no tinc res a
+            amagar”</q>
+        </p>
+
+        <p class="fragment text-light"><small><a
+              href="https://www.ted.com/talks/glenn_greenwald_why_privacy_matters/transcript#t-1225921">https://www.ted.com/talks/glenn_greenwald_why_privacy_matters/transcript#t-1225921</a></small>
+        </p>
+
+
+      </section>
+
+      <section data-background="imatges/equilibri.jpg">
+        <h2>Equilibri</h2>
+        <p class="fragment">Seguretat total no existeix</p>
+        <p class="fragment">Seguretat = 1 / Usabilitat</p>
+        <p class="fragment">Exemple: contrasenyes</p>
+      </section>
+      <section>
+        <h2>Tipus de xarxa</h2>
+        <img src="imatges/xarxa.jpg" class="fragment">
+
+      </section>
+      <section data-background="imatges/gnu.jpg">
+        <h2 class="text-light shadow">Programari lliure<br><i>Free software</i><br>PL</h2>
+        <p class="fragment text-light"><i>Free</i> = llibertat ≠ gratuït</p>
+        <p class="fragment text-light">Usar</p>
+        <p class="fragment text-light">Estudiar (accés al codi font)</p>
+        <p class="fragment text-light">Copiar</p>
+        <p class="fragment text-light">Modificar</p>
+        <p class="fragment text-light">Redistribuir</p>
+      </section>
+      <section data-background="imatges/open.jpg">
+        <h2 class="text-light shadow">Codi obert<br><i>Open source</i><br>CO</h2>
+        <p class="fragment text-light">Similar, però diferent</p>
+        <p class="fragment text-light">Mateixes llibertats amb restriccions</p>
+      </section>
+      <section data-background="imatges/windows.jpg">
+        <h2 class="text-light shadow">Programari privatiu<br><i>Propietary software</i><br>PP</h2>
+        <p class="fragment text-light">Usar ($$$)</p>
+        <p class="fragment text-light"><s>Accés al codi</s></p>
+        <p class="fragment text-light"><s>Copiar</s></p>
+        <p class="fragment text-light"><s>Modificar</s></p>
+        <p class="fragment text-light"><s>Redistribuir</s></p>
+      </section>
+      <section>
+        <h2>PL/CO --- PP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Programari</th>
+              <th>Preu</th>
+              <th>Seguretat</th>
+            </tr>
+            <tr>
+              <td>Lliure</td>
+              <td>Gratuït (normalment)</td>
+              <td>Comprovable</td>
+            </tr>
+            <tr>
+              <td>Propietari</td>
+              <td>$$$</td>
+              <td>NO comprovable</td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+      <section data-background="imatges/lock.jpg">
+        <h2 class="text-light shadow">Encriptació</h2>
+        <p class="fragment text-light">Reescriptura inintel·ligible</p>
+        <p class="fragment text-light">Dues claus:</p>
+        <p class="fragment text-light">Pública: per xifrar</p>
+        <p class="fragment text-light">Privada: per desxifrar</p>
+        <p class="fragment text-light">Xifrat d'extrem a extrem</p>
+      </section>
+      <section data-background="imatges/secret.jpg">
+        <h2 class="text-light shadow">Qüestió d'actitud</h2>
+        <p class="fragment text-light">El millor secret és el que no es comparteix</p>
+        <p class="fragment text-light">Gestió de contrasenyes</p>
+      </section>
+      <section data-background="imatges/cadena.jpg">
+        <h2 class="text-light shadow">És una cadena</h2>
+        <p class="fragment text-light">Tecnologia utilitzada</p>
+        <p class="fragment text-light">Xifrat</p>
+        <p class="fragment text-light">Gestió de contrasenyes</p>
+        <p class="fragment text-light">Número de gent implicada</p>
+      </section>
+      <section>
+        <h2>forta com la bàlua més dèbil</h2>
+        <p class="fragment">Reunions amb desconeguts</p>
+        <p class="fragment">Contrasenyes fàcils per recordar</p>
+        <p class="fragment">Contrasenyes escrites</p>
+        <p class="fragment">Una contrasenya per tots els serveis</p>
+        <p class="fragment">Conversa privada al carrer</p>
+        <p class="fragment">Correu xifrat en ordinador de fàcil accés</p>
+        <p class="fragment">Missatgeria xifrada que no esborrem</p>
+      </section>
+      <section data-background="imatges/mobil.jpg">
+        <h2 class="text-light shadow">Seguretat al mòbil</h2>
+        <p class="text-light shadow fragment">Missatgeria instantània</p>
+      </section>
+      <section data-background="imatges/signal.jpg">
+        <h2>Signal</h2>
+        <table class="fragment">
+          <thead>
+            <tr>
+              <th>Bo</th>
+              <th>Dolent</th>
+            </tr>
+            <tr>
+              <td>Programari lliure</td>
+              <td>Membres de grups són admins</td>
+            </tr>
+            <tr>
+              <td>Xifrat punt a punt (text, veu i vídeo)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Certificació mòbil destinatari</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Esborrat automàtic missatges</td>
+              <td></td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+      <section data-background="imatges/telegram.png">
+        <h2>Telegram</h2>
+        <table class="fragment">
+          <thead>
+            <tr>
+              <th>Bo</th>
+              <th>Dolent</th>
+            </tr>
+            <tr>
+              <td>Programari lliure (en part)</td>
+              <td>Xifrat no és per defecte i només per a converses, no per a grups</td>
+            </tr>
+            <tr>
+              <td>Xifrat punt a punt</td>
+              <td>Programari privatiu en la part de servidor</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Xifrat propi no auditat</td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+      <section data-background="imatges/whatsapp.jpg">
+        <h2 class="text-light shadow">Whatsapp</h2>
+        <table class="fragment text-light">
+          <thead>
+            <tr>
+              <th>Bo</th>
+              <th>Dolent</th>
+            </tr>
+            <tr>
+              <td>El més popular</td>
+              <td>Programari privatiu</td>
+            </tr>
+            <tr>
+              <td>Xifrat punt a punt ?</td>
+              <td>No es pot comprovar el xifrat</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Dades compartides amb Facebook</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Còpia seguretat al núvol sense xifrat</td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+      <section>
+        <h2>Conclusions</h2>
+        <p class="fragment">Signal: el més segur</p>
+        <p class="fragment">Telegram: segur (?)</p>
+        <p class="fragment">Whatsapp: el més insegur</p>
+      </section>
+      <section data-background="imatges/cruilla.jpg">
+        <h2 class="text-light shadow">Consells d'ús</h2>
+      </section>
+      <section>
+        <h2>Evitar els rumors</h2>
+        <aside class="notes">
+          Propera diapo és el vídeo de TV3, Sense ficció.
+        </aside>
+      </section>
+      <section data-background-video="video/alertes.mp4">
+      </section>
+      <section>
+        <img src="imatges/preguntes.jpg">
+      </section>
+      <section>
+        <h2>Filtres socràtics</h2>
+        <p><span class="fragment">Veracitat</span> <span class="fragment">---> Font contrastada</span></p>
+        <p class="fragment">Bondat</p>
+        <p><span class="fragment">Utilitat</span> <span class="fragment">---> A qui beneficia?</span></p>
+      </section>
+      <section data-background="imatges/debat.jpg">
+        <h2 class="text-light shadow">La dificultat dels debats</h2>
+        <p class="text-light fragment">Quina és la millor eina?</p>
+      </section>
+      <section data-background="imatges/estrelles.jpg">
+        <h2 class="text-light shadow">Propostes</h2>
+        <p class="text-light"><span class="fragment">Grups</span> <span class="fragment">---> Llistes de difusió</span>
+        </p>
+        <p class="fragment text-light">Normés d'ús</p>
+        <p class="fragment text-light">Eines alternatives de debat</p>
+      </section>
+      <section>
+        <h2>Per saber més</h2>
+        <p>Eines per a la privacitat:<br><a href="https://www.privacytools.io">https://www.privacytools.io</a></p>
+        <p>Guia autodefensa de Softcatalà:<br><a
+            href="https://autodefensa.softcatala.cat/">https://autodefensa.softcatala.cat/</a></p>
+        <p>Guia d’indicacions per preservar els drets fonamentals a internet:<br><a
+            href="https://xnet-x.net/ca/manual-tecnic-drets-fonamentals-internet/">https://xnet-x.net/ca/manual-tecnic-drets-fonamentals-internet/</a>
+        </p>
+      </section>
+      <section data-background="imatges/cactus.jpg">
+        <h2>Moltes gràcies</h2>
+        <p>Trobareu aquesta presentació a<br><a
+            href="http://garrigos.cat/presentacions">http://garrigos.cat/presentacions</a></p>
+      </section>
+      <section>
+        <h2>Crèdits</h2>
+        <table>
+          <tr>
+            <td>
+              <p class="text-small">Vídeo <a
+                  href="http://www.ccma.cat/tv3/alacarta/veritats-de-mentida/les-alertes-de-whatsapp/video/5669087/">"Les
+                  alertes de whatsapp"</a>, programa <strong>Sense Ficció</strong> de TV3</p>
+              <p class="text-small">Foto de portada: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@gilleslambert?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Gilles Lambert"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Gilles Lambert</span></a></p>
+              <p class="text-small">Foto d'anoymous: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@tomrdesigns?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Tom Roberts"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Tom Roberts</span></a></p>
+              <p class="text-small">Foto equilibri: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@tangcindy?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Cindy Tang"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Cindy Tang</span></a></p>
+              <p class="text-small">Foto candau: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@jamessutton_photography?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from James Sutton"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">James Sutton</span></a></p>
+              <p class="text-small">Foto secret: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@nategreno?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Nathaniel Tetteh"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Nathaniel Tetteh</span></a></p>
+
+            </td>
+            <td>
+
+              <p class="text-small">Foto cadena: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@daniel_von_appen?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Daniel von Appen"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Daniel von Appen</span></a></p>
+              <p class="text-small">Foto mòbil: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@frostroomhead?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Rodion Kutsaev"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Rodion Kutsaev</span></a></p>
+              <p class="text-small">Foto cruïlla: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@firdoussross?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Firdouss Ross"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Firdouss Ross</span></a></p>
+              <p class="text-small">Foto debat: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@theunsteady5?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Edwin Andrade"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Edwin Andrade</span></a></p>
+              <p class="text-small">Foto cactus: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@scottwebb?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Scott Webb"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Scott Webb</span></a></p>
+              <p class="text-small">Foto estrelles: <a
+                  style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                  href="https://unsplash.com/@tangcindy?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Download free do whatever you want high-resolution photos from Cindy Tang"><span
+                    style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                      viewBox="0 0 32 32">
+                      <title></title>
+                      <path
+                        d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                      </path>
+                    </svg></span><span style="display:inline-block;padding:2px 3px;">Cindy Tang</span></a></p>
+            </td>
+
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p class="text-small"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+                    alt="Llicència de Creative Commons" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Aquesta obra està subjecta a una
+                llicència de <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Reconeixement 4.0
+                  Internacional de Creative Commons</a></p>
+            </td>
+          </tr>
+        </table>
+
+
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/menu/menu.js"></script>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/drawer/drawer.js"></script>
+  <script>
+
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+      pdfSeparateFragments: false,
+      controls: true,
+      progress: true,
+      hash: true,
+      // slideNumber: 'c/t',
+      transitionSpeed: "slow",
+      pointer: {
+        key: "q", // key to enable pointer, default "q", not case-sensitive
+        color: "red", // color of a cursor, default "red" any valid CSS color
+        opacity: 0.8, // opacity of cursor, default 0.8
+        pointerSize: 20, // pointer size in px, default 12
+        alwaysVisible: false, // should pointer mode be always visible? default "false"
+        tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+      },
+      drawer: {
+        toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+        toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+        colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+        color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+        pathSize: 4, // (optional) path size in px, default 4
+      },
+      menu: {
+        side: 'left',
+        width: 'normal',
+        numbers: false,
+        titleSelector: 'h1, h2, h3, h4, h5, h6',
+        useTextContentForMissingTitles: false,
+        hideMissingTitles: false,
+        markers: true,
+        custom: false,
+        themes: false,
+        themesPath: 'dist/theme/',
+        transitions: false,
+        openButton: true,
+        openSlideNumber: false,
+        keyboard: true,
+        sticky: false,
+        autoOpen: true,
+        delayInit: false,
+        openOnInit: false,
+        loadIcons: true
+      },
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealPointer, RevealDrawer]
+    });
+
+  </script>
+  </body>
+
+</html>

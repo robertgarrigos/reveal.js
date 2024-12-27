@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Títol de la presentació</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/white.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
+  <link rel="stylesheet" href="plugin/drawer/drawer.css">
+  <link rel="stylesheet" href="custom/custom.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <img src="custom/assets/intro/logos/backdrop-wide.png">
+        <h3>Per a desenvolupadors de Drupal</h3>
+        <p><a href="http://backdropcms.org">backdropcms.org</a></p>
+      </section>
+      <section data-background-color="#000" class="black">
+        <section>
+          <h1 style="font-weight: 400">Qui sóc</h1>
+        </section>
+        <section>
+          <h3>Robert Garrigós</h3>
+          <p class="fragment fade-in-then-semi-out">
+            Usuari de Drupal de fa 14 anys
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            Primera Drupalcon: Amsterdam 2005<br />(30-40 assistents)
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            Co-organitzador Drupalcon Barcelona 2007<br />(500 assistents)
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            Co-fundador Ymbra
+          </p>
+          <p class="fragment fade-in-then-semi-out">
+            <a href="https://garrigos.cat">https://garrigos.cat</a>
+          </p>
+
+        </section>
+      </section>
+
+      <section data-background-color="#000" class="black">
+        <section>
+          <h1 style="font-weight: 400">Audiència</h1>
+        </section>
+        <section>
+          <h1 style="font-weight: 400">Quants coneixeu Backdrop</h1>
+        </section>
+        <section>
+          <h1 style="font-weight: 400">Quants l'heu usat alguna vegada</h1>
+        </section>
+        <section>
+          <h1 style="font-weight: 400">Quants heu fet una feina amb backdrop</h1>
+        </section>
+
+      </section>
+      <section>
+        <section>
+          <h2>Per què un derivat de Drupal?</h2>
+          <div class="column-wrapper" style="align-items: top; margin-bottom: 0;">
+            <div><img src="custom/assets/intro/logos/d8.png" height="150"></div>
+            <div><img src="custom/assets/intro/logos/backdrop.png" height="150"></div>
+          </div>
+          <div><img src="custom/assets/intro/images/fork-arrows.png"></div>
+          <div><img src="custom/assets/intro/logos/druplicon.png" height="150"></div>
+        </section>
+        <section data-background-color="#fff" class="white">
+          <h2>Drupal per a la gran empresa (enterpri<strong>Z</strong>e)</h2>
+          <blockquote cite="http://drupal.com/why-drupal-8">Drupal 8 beta is the latest, greatest release of the world's
+            most widely used enterprise web CMS.</blockquote>
+          <p><a href="http://drupal.com/why-drupal-8">http://drupal.com/why-drupal-8</a></p>
+        </section>
+        <section>
+          <h2>Direcció de Drupal:</h2>
+          <div class="column-wrapper">
+            <div>
+              <img src="custom/assets/intro/logos/d8.png">
+            </div>
+            <div style="text-align: left;">
+              <p class="fragment">Projectes més grans.</p>
+              <p class="fragment">Codi més complex/abstracte/modern.</p>
+              <p class="fragment">Pressupostos més grans.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Derivació i Manifest Backdrop</h2>
+          <h3>Setembre 2013</h3>
+          <ol>
+            <li>Preservar audiència Drupal</li>
+            <li>Drupal petita escala</li>
+            <li>Producte x usuaris finals</li>
+            <li>Cicle de llançaments diferent</li>
+            <li>Codi a Github</li>
+          </ol>
+          <aside class="notes">
+            <ul>
+              <li>Very similar to the mission and goals that we have today.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2>Direcció de Backdrop:</h2>
+          <div class="column-wrapper">
+            <div>
+              <img src="custom/assets/intro/logos/backdrop.png">
+            </div>
+            <div style="text-align: left;">
+              <p class="fragment">Projectes més petits => més projectes.</p>
+              <p class="fragment">Codi més accessibe.</p>
+              <p class="fragment">Cost menor.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1>Missió de Backdrop</h1>
+          <blockquote cite="https://backdropcms.org/philosophy">Backdrop CMS permet construir llocs web personalitzables
+            i <strong>econòmics</strong>, de forma col·laborativa i amb programari de codi obert.</blockquote>
+          <p><small><a href="https://backdropcms.org/philosophy"
+                target="_blank">https://backdropcms.org/philosophy</a></small></p>
+        </section>
+        <!--				<section>
+				<h2>Com es fa més <em>econòmic</em> el desenvolupament?</h2>
+				<ol>
+				<li class="fragment">+ funcions nadiues (nucli).</li>
+				<li class="fragment">Millor UX.</li>
+				<li class="fragment">Desenvolupament + ràpid i fàcil.</li>
+				<li class="fragment">Actualitzacions + ràpides i fàcils.</li>
+			</ol>
+		</section>
+	-->
+        <section>
+          <h2>Principis de Backdrop</h2>
+          <ol>
+            <li class="fragment">La <strong>compatibilitat enrere</strong> és important</li>
+            <li class="fragment">Escriure <strong>codi</strong> per a una majoria</li>
+            <li class="fragment">Incloure <strong>característiques</strong> per a una majoria</li>
+            <li class="fragment">Assegurar que Backdrop es pugui <strong>ampliar</strong></li>
+            <li class="fragment">Assegurar requeriments de sistema <strong>baixos</strong></li>
+            <li class="fragment">Planificar i <strong>programar</strong> llançaments</li>
+            <li class="fragment">Mantenir-se sempre <strong>Gratuït i Codi Obert</strong></li>
+          </ol>
+          <p><small><a href="https://backdropcms.org/philosophy"
+                target="_blank">https://backdropcms.org/philosophy</a></small></p>
+        </section>
+        <section>
+          <div>
+            <img src="custom/assets/history/drupal7-end-of-life.jpg" height="450">
+          </div>
+          <p><small><a href="https://dri.es/drupal-7-8-and-9#2"
+                target="_blank">https://dri.es/drupal-7-8-and-9#2</a></small></p>
+        </section>
+        <section>
+          <div>
+            <div><img src="custom/assets/intro/logos/d8.png" height="150"> <span style="font-size: 3em;">-----> D9</span></div>
+
+            <div>
+              <span style="font-size: 4em;">+</span>&nbsp;&nbsp;&nbsp;&nbsp; <img src="custom/assets/intro/logos/backdrop.png"
+                height="150">
+            </div>
+            <div>
+              <hr />
+            </div>
+            <div>
+              Més feina
+            </div>
+          </div>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1 style="font-weight: 400">Característiques<br />UX<br /> principals</h1>
+        </section>
+        <section>
+          <h3>Nou sistema de dissenys (layouts) basats en Bootstrap 4</h3>
+          <img width="500" src="custom/assets/history/backdrop-140-bootstrap-layouts.png"
+            alt="Bootstrap Layouts in Backdrop 1.4.0" />
+        </section>
+        <section>
+          <h3>Pestanyes verticals sensibles</h3>
+          <img src="custom/assets/history/backdrop-120-vertical-tabs.gif"
+            alt="Vertical tabs made responsive in Backdrop 1.2.0" />
+        </section>
+        <section>
+          <h3>Permisos i patrons URL en els formularis de creació de contingut</h3>
+          <img src="custom/assets/history/backdrop-130-node-type-options.gif"
+            alt="Permissions and URL patterns on content type forms in Backdrop 1.3.0" />
+        </section>
+        <section>
+          <h3>Instal·lació mòduls via web</h3>
+          <img src="custom/assets/history/backdrop-140-installer-new.gif" alt="Project installer in Backdrop 1.4.0" />
+        </section>
+        <section>
+          <h3>CKeditor i gestió d'imatges a nucli</h3>
+          <img width="650" src="custom/assets/history/backdrop-160-file-management.gif"
+            alt="Files become more complete entities in Backdrop 1.6.0" />
+        </section>
+        <section>
+          <h3>Navegador d'imatges</h3>
+          <img width="800" src="custom/assets/history/backdrop-111-file-browser.png"
+            alt="New Image Browser in Backdrop 1.11.0" />
+        </section>
+        <section>
+          <h3>Afegit d'imatges per arrossegament</h3>
+          <img src="custom/assets/history/backdrop-170-drag-and-drop-image.gif"
+            alt="Images may be uploaded through copy/paste in Backdrop 1.7.0" />
+        </section>
+        <section>
+          <h3>Imatges i arxius com a entitats i gestionables</h3>
+          <img src="custom/assets/history/backdrop-190-file-manage.png" alt="New replace file feature in Backdrop 1.9.0" />
+        </section>
+        <section>
+          <h3>Enllaços a contingut existent a l'editor</h3>
+          <img src="custom/assets/history/backdrop-170-linkit.gif" alt="Link to existing content in Backdrop 1.7.0" />
+        </section>
+        <section>
+          <h3>Auto-tancament de comentaris</h3>
+          <img src="custom/assets/history/backdrop-110-comment-closing.png" alt="Comment auto-closing in Backdrop 1.10.0" />
+        </section>
+
+        <section>
+          <h3>Publicació programada</h3>
+          <img src="custom/assets/history/backdrop-110-scheduling.png" alt="Scheduled publishing in Backdrop 1.10.0" />
+        </section>
+        <section>
+          <h4>Mòduls inclosos al nucli</h4>
+
+          <div class="modules-list" style="font-size: 0.75em">
+            <div class="column-wrapper" style="text-align: left; line-height: 1.3; font-size: 80%">
+              <ul style="width: 24%;">
+                <li>Admin menu </li>
+                <li>Block class </li>
+                <li>Caption Filter </li>
+                <li>Chaos Tools</li>
+                <li>CKeditor*</li>
+                <li>Comment Closer</li>
+                <li>Context*</li>
+                <li>Date*</li>
+                <li>Display Suite* </li>
+                <li>Elements </li>
+                <li>Email </li>
+                <li>Entity API*</li>
+              </ul>
+              <ul style="width: 24%;">
+                <li>Entity view mode </li>
+                <li>Features*</li>
+                <li>File entity*</li>
+                <li>Global Redirect*</li>
+                <li>HTML5 Tools module</li>
+                <li>IMCE Wysiwyg bridge*</li>
+                <li>Insert</li>
+                <li>Instant Filter*</li>
+                <li>jQuery Update*</li>
+                <li>Libraries API*</li>
+                <li>Link</li>
+              </ul>
+              <ul style="width: 24%;">
+                <li>Menu block </li>
+                <li>Menu translation (i18n)</li>
+                <li>Module Filter*</li>
+                <li>Nice Menus*</li>
+                <li>Node Block</li>
+                <li>Panels*</li>
+                <li>Panels Everywhere</li>
+                <li>Pathauto </li>
+                <li>Project Browser</li>
+                <li>Redirect</li>
+                <li>Role Assign</li>
+              </ul>
+              <ul style="width: 24%;">
+                <li>Scheduler*</li>
+                <li>Smartmenus</li>
+                <li>Strongarm</li>
+                <li>Superfish Menus*</li>
+                <li>Token</li>
+                <li>Transliteration</li>
+                <li>Media*</li>
+                <li>Variable*</li>
+                <li>Views</li>
+                <li>Views Bulk Operations</li>
+                <li>WYSIWYG*</li>
+              </ul>
+            </div>
+          </div>
+          <small>* Incosos parcialment o s'inclou alternativa comparable.</small>
+          <small><a
+              href="https://backdropcms.org/user-guide/features-added-core">https://backdropcms.org/user-guide/features-added-core</a></small>
+          </li>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1 style="font-weight: 400">Desenvolupament<br />amb<br />Backdrop</h1>
+        </section>
+        <section>
+          <h3>Nova estructura d'arxius</h3>
+          <img src="custom/assets/devel/arxius.png" alt="Nova estructura d'arxius" />
+          <aside class="notes">
+            <ul>
+              <li>
+                Actualització del nucli més simple
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Gestió de configuracions en arxius</h3>
+          <img src="custom/assets/devel/configuracions.png" alt="Gestió de configuracions en arxius" />
+          <aside class="notes">
+            <ul>
+              <li>
+                Format json.
+              </li>
+              <li>
+                Control de versions via git.
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Gestió de configuracions via web</h3>
+          <img src="custom/assets/history/backdrop-180-config.png" alt="New Configuration diff design in Backdrop 1.8.0" />
+        </section>
+        <section>
+          <h3>Gestió de configuracions via drush</h3>
+          <img src="custom/assets/devel/bcex.gif" alt="Gestió de configuracions via drush" />
+        </section>
+        <section>
+          <h3>Drush</h3>
+          <p class="fragment">
+            bcex: exportació configuracions
+          </p>
+          <p class="fragment">
+            bcim: importació configuracions
+          </p>
+          <p class="fragment">
+            No funcionen (encara): up, en, dis
+          </p>
+          <p class="fragment">
+            Sí funciona: dl
+          </p>
+        </section>
+        <section>
+          <h3>Mòdul Devel</h3>
+          <p class="fragment">
+            Theme debug
+          </p>
+          <p class="fragment">
+            dpm()
+          </p>
+          <p class="fragment">
+            Totes les altres funcionalitats
+          </p>
+        </section>
+        <section>
+          <h3>Sistema de plantilles</h3>
+          <p class="fragment">
+            Similar a D7
+          </p>
+          <p class="fragment">
+            Motor de plantilles: phpTemplate
+          </p>
+          <p class="fragment">
+            Adaptació al nou sistema de dissenys
+          </p>
+          <p class="fragment">
+            Sub-plantilles
+          </p>
+        </section>
+        <section>
+          <h3>Dissenys (Layouts)</h3>
+          <p>Nova eina de construcció de l'estructura.</p>
+          <img src="custom/assets/layouts/images/layout_ui.png" style="width: 80%">
+        </section>
+        <section>
+          <h3>Separació dels conceptes de Plantilla i Estructura del lloc</h3>
+        </section>
+        <section>
+          <h2>Canvi de plantilla</h2>
+          <div class="column-wrapper">
+            <div><img src="custom/assets/layouts/images/business_theme_outlined.png"></div>
+            <div><i class="fa fa-arrow-right" style="font-size: 5em; margin-top: .5em;"></i></div>
+            <div><img src="custom/assets/layouts/images/nexus_theme_outlined.png"></div>
+          </div>
+        </section>
+        <section>
+          <h2>A Drupal 7</h2>
+          <p class="fragment">Canviar plantilles mou només els blocs que estan en regions amb el mateix nom.</p>
+          <p class="fragment">Regions inexistents? Els blocs desapareixen.</p>
+          <p class="fragment"><strong>Estructura</strong> del lloc (posicions dels blocs) estretament lligada amb
+            l'<strong>aparença</strong> (plantilla).</p>
+        </section>
+        <section>
+          <h2>A Backdrop</h2>
+          <p class="fragment">Dissenys (layouts) diferents de les plantilles.</p>
+          <p class="fragment">Canviar de plantilla no té efecte en la posició dels blocs.</p>
+          <p class="fragment">Tots els temes tenen un disseny sensible.</p>
+          <p class="fragment">Estructura de lloc separada de l'aparença.</p>
+        </section>
+        <section>
+          <h3>Nou sistema de dissenys (layouts) basats en Bootstrap 4</h3>
+          <img width="500" src="custom/assets/history/backdrop-140-bootstrap-layouts.png"
+            alt="Bootstrap Layouts in Backdrop 1.4.0" />
+        </section>
+        <section>
+          <h3>Mòduls</h3>
+          <p>
+            Capa de compatibilitat amb Drupal
+          </p>
+          <img src="custom/assets/history/backdrop-100-drupal.png"
+            alt="Backwards compatibility layer for Drupal code sample." />
+        </section>
+        <section>
+          <h2>Mòduls (2)</h2>
+          <p class="fragment">Programació funcional (no OO).</p>
+          <p class="fragment">Noves funcions incloses al nucli.</p>
+          <p class="fragment">Mòdul per convertir mòduls, Coder Upgrade: <a
+              href="https://backdropcms.org/project/coder_upgrade">https://backdropcms.org/project/coder_upgrade</a></p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Recursos</h1>
+        </section>
+        <section>
+          <h3>APIs</h3>
+          <p class="fragment"><a href="https://api.backdropcms.org/">https://api.backdropcms.org</a></p>
+          <h3 class="fragment" 3>Codi</h3>
+          <p class="fragment"><a href="https://backdropcms.org/">https://backdropcms.org</a></p>
+          <h3 class="fragment" 3>Github</h3>
+          <p class="fragment">Backdrop i incidències: <a
+              href="https://github.com/backdrop">https://github.com/backdrop</a></p>
+          <p class="fragment">Mòduls/Plantilles/Layouts: <a
+              href="https://github.com/backdrop-contrib">https://github.com/backdrop-contrib</a></p>
+          <p class="fragment">Operacions: <a href="https://github.com/backdrop-ops">https://github.com/backdrop-ops</a>
+          </p>
+        </section>
+        <section>
+          <h3>Lando</h3>
+          <p class="fragment">Codi: <a href="https://github.com/lando/lando">https://github.com/lando/lando</a></p>
+          <p class="fragment">Docs: <a href="https://docs.devwithlando.io/">https://docs.devwithlando.io/</a></p>
+          <aside class="notes">
+            <ul>
+              <li>Entorn de desenvolupament en local basat en docker</li>
+              <li>
+                Permet configurar un entorn per a cada projecte
+              </li>
+              <li>
+                Estandaritzar entorns per equips
+              </li>
+              <li>
+                No cal usar directament docker
+              </li>
+            </ul>
+          </aside>
+        </section>
+      </section>
+      </section>
+      <section>
+        <section>
+          <h1>Comunitat</h1>
+        </section>
+        <section>
+          <h3>Fòrums</h3>
+          <p class="fragment"><a href="https://forum.backdropcms.org/">https://forum.backdropcms.org/</a></p>
+          <h3 class="fragment" 3>Google Hangouts</h3>
+          <p class="fragment">Cada dijous a les 19h CET. Mini-sprint posterior</p>
+          <p class="fragment"><a
+              href="https://plus.google.com/+BackdropcmsOrg">https://plus.google.com/+BackdropcmsOrg</a></p>
+
+          <h3 class="fragment" 3>Altres</h3>
+          <p class="fragment"><a
+              href="https://gitter.im/backdrop/backdrop-issues">gitter.im/backdrop/backdrop-issues</a></p>
+          <p class="fragment"><a href="https://twitter.com/backdropcms">@backdropcms</a></p>
+        </section>
+      </section>
+      <section data-background-color="#000" class="black">
+        <h1 style="font-weight: 400">Demo</h1>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/menu/menu.js"></script>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/drawer/drawer.js"></script>
+  <script>
+
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+      pdfSeparateFragments: false,
+      controls: true,
+      progress: true,
+      hash: true,
+      // slideNumber: 'c/t',
+      transitionSpeed: "slow",
+      pointer: {
+        key: "q", // key to enable pointer, default "q", not case-sensitive
+        color: "red", // color of a cursor, default "red" any valid CSS color
+        opacity: 0.8, // opacity of cursor, default 0.8
+        pointerSize: 20, // pointer size in px, default 12
+        alwaysVisible: false, // should pointer mode be always visible? default "false"
+        tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+      },
+      drawer: {
+        toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+        toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+        colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+        color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+        pathSize: 4, // (optional) path size in px, default 4
+      },
+      menu: {
+        side: 'left',
+        width: 'normal',
+        numbers: false,
+        titleSelector: 'h1, h2, h3, h4, h5, h6',
+        useTextContentForMissingTitles: false,
+        hideMissingTitles: false,
+        markers: true,
+        custom: false,
+        themes: false,
+        themesPath: 'dist/theme/',
+        transitions: false,
+        openButton: true,
+        openSlideNumber: false,
+        keyboard: true,
+        sticky: false,
+        autoOpen: true,
+        delayInit: false,
+        openOnInit: false,
+        loadIcons: true
+      },
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealPointer, RevealDrawer]
+    });
+
+  </script>
+  </body>
+
+</html>
